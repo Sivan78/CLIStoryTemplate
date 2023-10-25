@@ -6,5 +6,7 @@
 import Foundation
 
 func chapterFour() {
-    // Your portion of the story goes here
-}
+    print("hello my friend")
+    
+    }
+
