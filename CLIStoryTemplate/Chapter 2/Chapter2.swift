@@ -5,6 +5,7 @@
 
 import Foundation
 
-func chapterTwo() {print(1,2,3,4,5)
+func chapterTwo() {
+   print("my story")
     // Your portion of the story goes here
 }
