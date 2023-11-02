@@ -2,6 +2,16 @@
 //  Chapter3.swift
 //  CLIStoryTemplate
 /* Make a list of all the Concepts.
+ Variables, Constants, Types, and Comments
+ Conditionals, Basic Operators
+ Functions_inPut & outPut
+ Arrays, Loops
+ Structs(properties/methods
+ Enums, Optionals(review this concept)
+ SwiftUI Reveiw
+ @State & User Input
+ Navigation
+ 
  
 */
 //Global Constants

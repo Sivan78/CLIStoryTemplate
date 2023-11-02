@@ -5,6 +5,8 @@
 
 import Foundation
  //MyStoryBasedOnChapter2II
+func chapterTwo(){
+    
 func chapterTwoII() {
     print("my story")
     func BecauseOf1(){
@@ -24,4 +26,5 @@ func chapterTwoII() {
         BecauseOf2()
         BecauseOf3()
     }
+}
 }
