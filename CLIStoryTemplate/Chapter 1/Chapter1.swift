@@ -2,7 +2,6 @@
 //  Chapter1.swift
 //  CLIStoryTemplate
 //
-import Foundation
 
 /*
  1. Once upon a time...
@@ -15,13 +14,21 @@ import Foundation
  8. And ever since then...
  */
 
+
+import Foundation
+
 // Global Constants
 let character1 = "Mitch"
 let character2 = "Father"
 let character3 = "Mother"
 let teapot = "Chai"
 
-// Chapter1 Funcs
+
+var cities: [String] = ["London","Birmingham","Liverpool",]
+var years: [String] = ["2000", "2001", "2002", "2003", "2004", "2005",]
+
+
+
 func Intro(){
     print("Once upon a time, there were a fmaily of three people. \(character1), \(character2), and \(character3). who lived in an ancient city in Jordan.")
     
@@ -34,4 +41,8 @@ func SadPart(){
     print ("Until one day the \(character3)passed. and \(character2) was greatly devastated by her demise that he barely left his room for days. He often reminisced on all the good times he’d shared with his late wife. He specifically missed her ability to make the best tea pots \(teapot) after a long day.")
 }
 
-
+func chapterOne() {
+    Intro()
+    DailyRoutine()
+    SadPart()
+}
