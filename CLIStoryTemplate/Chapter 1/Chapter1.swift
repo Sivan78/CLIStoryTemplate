@@ -17,28 +17,55 @@
 
 import Foundation
 
-// Global Constants
-let character1 = "Mitch"
-let character2 = "Father"
-let character3 = "Mother"
-let teapot = "Chai"
+
+//function
+    let character1 = "Mitch"
+    let character2 = "Father"
+    let character3 = "Mother"
+    let teapot = "Chai"
+    
+//arrays
+    var cities: [String] = ["London","Birmingham","Liverpool",]
+    var years: [String] = ["2000", "2001", "2003"]
+    
+//optional
+struct Book {
+    var title: String
+    var author: String
+    var publishYear: Int?
+    
+    func description() {
+        guard let published = publishYear else{
+            return
+        }
+        print("This book is about a tea story called \(title), written by \(author), it was published in")
+        print(myBook.publishYear ?? "2023")
+    }
+}
+ var myBook = Book(title: "CHAI", author: "Mitch Parker", publishYear: 2019)
+ var notMyBook = Book(title: "Greentea", author: "Sam Smith")
 
 
-var cities: [String] = ["London","Birmingham","Liverpool",]
-var years: [String] = ["2000", "2001", "2002", "2003", "2004", "2005",]
+//myBook.description()
+//notMyBook.description()
 
 
+//story start
+
+// Ch1 Funcs
 
 func Intro(){
     print("Once upon a time, there were a fmaily of three people. \(character1), \(character2), and \(character3). who lived in an ancient city in Jordan.")
     
 }
 func DailyRoutine(){
-    print("Every day, at sunrise and sunset they will sit together, have breakfast, dinner and occasionally have lunch together. \(character2), \(character3), and \(character1).their time together was always filled with tales of their day, lots of hearty loud laughs, great conversation and at the centre of it all, a nicely brewed tea pot, \(teapot) shared in fancy tea mugs.")
+
+    print("Every day, at sunrise or sunset they will sit together have breakfast or dinner together. \(character2), \(character3), and \(character1). Their time together was always filled with tales of their day, lots of hearty loud laughs, great conversation and at the centre of it all, a nicely brewed tea pot,\(teapot) shared in fancy tea mugs.")
 }
 
 func SadPart(){
-    print ("Until one day the \(character3)passed. and \(character2) was greatly devastated by her demise that he barely left his room for days. He often reminisced on all the good times he’d shared with his late wife. He specifically missed her ability to make the best tea pots \(teapot) after a long day.")
+    print ("Until one day the \(character3) get sick partly paralyzed for a years of \(years) then she passed. and \(character2) was greatly devastated by her demise that he barely left his room for days.")
+
 }
 
 func chapterOne() {
@@ -46,3 +73,4 @@ func chapterOne() {
     DailyRoutine()
     SadPart()
 }
+
